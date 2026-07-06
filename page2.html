@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Genuine technology</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+ 
+<nav class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+      
+      <div class="flex items-center space-x-8">
+        <a href="/" class="flex items-center">
+          <img class="h-16 w-100" src="sec.jpg" alt="Jobz.pk Logo">
+        </a>
+
+  <div class="hidden md:flex space-x-4">
+        <a href="/" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Home</a>
+
+        <div class="relative">
+          <button id="dropdownJobsButton" data-dropdown-toggle="dropdownJobs"
+            class="flex items-center text-gray-700 hover:text-blue-600 text-sm font-medium">
+            Jobs
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div id="dropdownJobs" class="hidden absolute z-10 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700">
+              <li><a href="/government-jobs" class="block px-4 py-2 hover:bg-blue-50">Government Jobs</a></li>
+              <li><a href="/private-jobs" class="block px-4 py-2 hover:bg-blue-50">Private Jobs</a></li>
+              <li><a href="/overseas-jobs" class="block px-4 py-2 hover:bg-blue-50">Overseas Jobs</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative">
+          <button id="dropdownIndustriesButton" data-dropdown-toggle="dropdownIndustries"
+            class="flex items-center text-gray-700 hover:text-blue-600 text-sm font-medium">
+            Industries
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div id="dropdownIndustries" class="hidden absolute z-10 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700">
+              <li><a href="/industries/it" class="block px-4 py-2 hover:bg-blue-50">IT & Software</a></li>
+              <li><a href="/industries/healthcare" class="block px-4 py-2 hover:bg-blue-50">Healthcare</a></li>
+              <li><a href="/industries/teaching" class="block px-4 py-2 hover:bg-blue-50">Teaching</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="/blog" class="text-gray-700 hover:text-blue-600 text-sm font-medium">Blog</a>
+      </div>
+    </div>
+
+    <div class="hidden md:flex items-center space-x-2">
+      <a href="Login.html" class="text-sm font-medium text-gray-700 hover:text-blue-600 px-2 py-1.5">Login</a>
+      <a href="employedrig.html" class="px-2.5 py-1.5 border border-blue-500 text-sm font-medium rounded-md text-blue-600 hover:bg-blue-50">Employee Register</a>
+      <a href="companyrig.html" class="px-2.5 py-1.5 border border-blue-500 text-sm font-medium rounded-md text-blue-600 hover:bg-blue-50">Company Register</a>
+      <a href="job.html" class="px-3 py-1.5 text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700">Post a Job</a>
+    </div>
+
+    <button data-collapse-toggle="navbarMobile" type="button" 
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100" 
+      aria-controls="navbarMobile" aria-expanded="false">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 17 14">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <div class="hidden w-full md:hidden" id="navbarMobile">
+    <ul class="flex flex-col p-3 space-y-1 border-t border-gray-200 bg-gray-50">
+      <li><a href="/" class="text-gray-700 hover:text-blue-600">Home</a></li>
+
+      <li>
+        <button data-dropdown-toggle="dropdownJobsMobile" class="flex justify-between items-center w-full text-gray-700 hover:text-blue-600">
+          Jobs
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="dropdownJobsMobile" class="hidden bg-white rounded-md shadow p-2 mt-1">
+          <a href="/government-jobs" class="block px-4 py-2 hover:bg-blue-50 text-sm">Government Jobs</a>
+          <a href="/private-jobs" class="block px-4 py-2 hover:bg-blue-50 text-sm">Private Jobs</a>
+          <a href="/overseas-jobs" class="block px-4 py-2 hover:bg-blue-50 text-sm">Overseas Jobs</a>
+        </div>
+      </li>
+
+      <li>
+        <button data-dropdown-toggle="dropdownIndustriesMobile" class="flex justify-between items-center w-full text-gray-700 hover:text-blue-600">
+          Industries
+          <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div id="dropdownIndustriesMobile" class="hidden bg-white rounded-md shadow p-2 mt-1">
+          <a href="/industries/it" class="block px-4 py-2 hover:bg-blue-50 text-sm">IT & Software</a>
+          <a href="/industries/healthcare" class="block px-4 py-2 hover:bg-blue-50 text-sm">Healthcare</a>
+          <a href="/industries/teaching" class="block px-4 py-2 hover:bg-blue-50 text-sm">Teaching</a>
+        </div>
+      </li>
+
+      <li><a href="/blog" class="text-gray-700 hover:text-blue-600">Blog</a></li>
+      <li><hr class="my-2 border-gray-200"></li>
+      <li><a href="Login.html" class="block text-gray-700 hover:text-blue-600">Login</a></li>
+      <li><a href="employedrig.html" class="block text-gray-700 hover:text-blue-600">Employee Register</a></li>
+      <li><a href="companyrig.html" class="block text-gray-700 hover:text-blue-600">Company Register</a></li>
+      <li><a href="job.html" class="block text-white bg-blue-600 text-center py-2 rounded-md hover:bg-blue-700">Post a Job</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<section class="mx-12 mb-6">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Abbottabad(24)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Alipur Chatta(8)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Abdul Hakim(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Arifwala(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Alipur(4)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Attock(7)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Badin(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Bunner(10)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Bahawalnagar(8)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Burewala(8)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Bahawalpur(34)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Chakwal(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Chicha watni(4)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Chaman(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Chishtian(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Chashma(5)</div>
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Dadu(9)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Dinga(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Daska(8)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Dunyapur(7)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Depal Pur(6)</div>
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Faisalabad(377)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in FR Peshawar(5)</div>
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Gilgit(10)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Gujranwala(126)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Gujrat(30)</div>
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Hafizabad(8)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Hari Pur(6)</div>
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Islamabad(2428)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Jacobabad(10)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Jauharabad(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Jalal Pur Priwala(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Jhang(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Jamshoro(13)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Jhelum(29)</div>
+
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Kallur Kot(7)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Khairpur(7)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Kharian(11)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Karachi(3837)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Khanewal(10)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Kohat(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Kashmore(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Kharan(12)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Kot Addu(6)</div>
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Lahore(5149)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Larkana(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Layyah(6)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Mandi Bahauddin(7)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Mehar(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Multan(178)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Muzaffargarh(16)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Mansehra(10)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Mehrab Pur(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Muridkay(11)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Mardan(14)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Minchanabad(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Muzaffarabad(7)</div>
+
+
+
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Narowal(7)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Okara(7)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Pak Pattan Sharif(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Pindi Bhattian(15)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Pannu Aqil(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Peshawar(156)</div>
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Quaidabad(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Quetta(47)</div>
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Rahimyar Khan(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Ratto Dero(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Raiwind(20)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Rawalpindi(997)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Rajanpur(13)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Sadiqabad(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Shahdad Pur(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Shorkot(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Sukkur(23)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Sahiwal(36)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Sheikhupura(16)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Shikarpur(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Shujabad(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Sialkot(148)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Swat(9)</div>
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Tando Adam(6)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Tarnol(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Taxila(7)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Thatta(5)</div>
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Tobatek Singh(8)</div>
+
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Upper Dir(5)</div>
+
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Vehari(9)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Wah Cantt(31)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Yazman Mandi(9)</div>
+
+
+
+    <div class="bg-white shadow p-1 text-center text-sm">Jobs in Zahir Pir(8)</div>
+
+  </div>
+</section>
+
+
+
+
+<section class="bg-gray-50">
+
+  <footer class="bg-[#222831] text-gray-300 pt-10 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+        
+        
+        <div>
+          <h6 class="uppercase text-sm font-semibold text-white mb-3">Jobs by Functional Area</h6>
+          <ul class=" text-sm">
+            <li><a href="#" class="hover:text-cyan-400">Sales & Business Development Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Accounts, Finance & Financial Services Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Client Services & Customer Support Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Marketing Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Software & Web Development Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Creative Design Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Administration Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Operations Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Human Resources Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Telemarketing Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Secretarial, Clerical & Front Office Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Health & Medicine Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Engineering Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Teachers/Education, Training & Development Jobs</a></li>
+            
+          </ul>
+        </div>
+
+        
+        <div>
+          <h6 class="uppercase text-sm font-semibold text-white mb-3">Jobs by City</h6>
+          <ul class=" text-sm">
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Lahore</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Karachi</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Islamabad</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Rawalpindi</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Faisalabad</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Multan</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Gujranwala</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Quetta</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Peshawar</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Hyderabad Pakistan</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Sialkot</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Sargodha</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Gujrat</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Sheikhupura</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Bahawalpur</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Sahiwal</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h6 class="uppercase text-sm font-semibold text-white mb-3">Jobs by Industry</h6>
+          <ul class=" text-sm">
+            <li><a href="#" class="hover:text-cyan-400">Business Development Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Information Technology Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Recruitment / Employment Firms Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Services Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Manufacturing Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Consultants Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Banking/Financial Services Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Call Center Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Travel/Tourism/Transportation Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Education/Training Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Healthcare / Hospital / Medical Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">BPO Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Real Estate/Property Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">E-Commerce / E- Business Jobs</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Other Jobs</a></li> 
+          </ul>
+        </div>
+
+
+        <div>
+          <h6 class="uppercase text-sm font-semibold text-white mb-3">Job Seekers</h6>
+          <ul class=" text-sm">
+            <li><a href="#" class="hover:text-cyan-400">British Council Online Test Placement Test</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Top Professionals</a></li>
+            <li><a href="#" class="hover:text-cyan-400">CV Writing</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Free CV Review</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Success Stories</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Contact Us</a></li>
+          </ul>
+          <h6 class="uppercase text-sm font-semibold text-white mb-3 mt-3">Employers</h6>
+          <ul class=" text-sm">
+            <li><a href="#" class="hover:text-cyan-400">Create Account</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Post a Job</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Employer Products</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Contact Sales</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h6 class="uppercase text-sm font-semibold text-white mb-3">International Jobs</h6>
+          <ul class=" text-sm mb-4">
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Saudi Arabia</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Bahrain</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Qatar</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in UAE</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Jobs in Malaysia</a></li>
+          </ul>
+
+       
+
+<div>
+          <h6 class="uppercase text-sm font-semibold text-white mb-3">Other</h6>
+          <ul class=" text-sm mb-4">
+            <li><a href="contact.html" class="hover:text-cyan-400">Contact Us</a></li>
+            <li><a href="term.html" class="hover:text-cyan-400">Term & Coditions</a></li>
+            <li><a href="privacy.html" class="hover:text-cyan-400">Privacy Policy</a></li>
+            <li><a href="Faq.html" class="hover:text-cyan-400">FAQs</a></li>
+
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-600 mt-10 pt-4 text-center text-xs text-gray-400">
+        © <span id="year"></span>  Genuine Technology. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.1/flowbite.min.js"></script>
+</body>
+</html>
